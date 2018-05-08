@@ -198,37 +198,37 @@ print(url)
         
         
         
-   // }
+    }
     
     
     
     
-   // override func viewDidLoad() {
-   // '    super.viewDidLoad()
-   //  '
-     // '  statusBarItem = statusBar.statusItem(withLength: -1)
-       //' statusBarItem.menu = leMenu
+       override func viewDidLoad() {
+       super.viewDidLoad()
+   
+       statusBarItem = statusBar.statusItem(withLength: -1)
+       statusBarItem.menu = leMenu
         
-       // openMenuItem.title = "Open"
-        //openMenuItem.target = self
-    //    openMenuItem.action = #selector(setWindowVisible)
-     //   openMenuItem.keyEquivalent = ""
-      //  openMenuItem.isEnabled = true
+        openMenuItem.title = "Open"
+        openMenuItem.target = self
+        openMenuItem.action = #selector(setWindowVisible)
+        openMenuItem.keyEquivalent = ""
+        openMenuItem.isEnabled = true
         
-  //      openMenuItem.title = "Project Folder"
-   //     openMenuItem.target = self
-    //    openMenuItem.action = #selector(setWindowVisible)
-     //   openMenuItem.keyEquivalent = ""
-      //  openMenuItem.isEnabled = true
+        openMenuItem.title = "Project Folder"
+        openMenuItem.target = self
+        openMenuItem.action = #selector(setWindowVisible)
+        openMenuItem.keyEquivalent = ""
+        openMenuItem.isEnabled = true
         
-  //      exitMenuItem.title = "Quit"
-    //    exitMenuItem.target = self
-     //   exitMenuItem.action = {let projfolder = MyVariables.Projfolder; NSWorkspace.shared.openFile(projfolder);}
-      //  exitMenuItem.keyEquivalent = ""
+        exitMenuItem.title = "Quit"
+        exitMenuItem.target = self
+        exitMenuItem.action = #selector(setWindowVisible)
+        exitMenuItem.keyEquivalent = ""
         
-    //    leMenu.addItem(openMenuItem)
-    //    leMenu.addItem(exitMenuItem)
-      //  setLabelMessage()
+        leMenu.addItem(openMenuItem)
+        leMenu.addItem(exitMenuItem)
+        setLabelMessage()
     }
     
     override var representedObject: Any? {

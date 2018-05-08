@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4281425220A178FB00116859 /* Folder */,
-				4281422220A1333A00116859 /* Project Pipeline */,
+				4281422220A1333A00116859 /* Menu Bar Tut */,
 				4281423520A1333C00116859 /* Project PipelineTests */,
 				4281424020A1333C00116859 /* Project PipelineUITests */,
 				4281422120A1333A00116859 /* Products */,
@@ -108,7 +108,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4281422220A1333A00116859 /* Project Pipeline */ = {
+		4281422220A1333A00116859 /* Menu Bar Tut */ = {
 			isa = PBXGroup;
 			children = (
 				4281422320A1333B00116859 /* AppDelegate.swift */,
@@ -118,7 +118,7 @@
 				4281422C20A1333C00116859 /* Info.plist */,
 				4281422D20A1333C00116859 /* Menu_Bar_Tut.entitlements */,
 			);
-			path = "Project Pipeline";
+			path = "Menu Bar Tut";
 			sourceTree = "<group>";
 		};
 		4281423520A1333C00116859 /* Project PipelineTests */ = {
