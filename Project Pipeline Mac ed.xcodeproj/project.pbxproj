@@ -46,17 +46,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4281422020A1333A00116859 /* Menu Bar Tut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu Bar Tut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4281422020A1333A00116859 /* Project Pipeline Mac ed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Pipeline Mac ed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4281422320A1333B00116859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4281422520A1333B00116859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4281422720A1333C00116859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4281422A20A1333C00116859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4281422C20A1333C00116859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4281422D20A1333C00116859 /* Menu_Bar_Tut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Menu_Bar_Tut.entitlements; sourceTree = "<group>"; };
-		4281423220A1333C00116859 /* Menu Bar TutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu Bar TutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4281423220A1333C00116859 /* Project Pipeline Mac edTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project Pipeline Mac edTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4281423620A1333C00116859 /* Menu_Bar_TutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Bar_TutTests.swift; sourceTree = "<group>"; };
 		4281423820A1333C00116859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4281423D20A1333C00116859 /* Menu Bar TutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Menu Bar TutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4281423D20A1333C00116859 /* Project Pipeline Mac edUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project Pipeline Mac edUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4281424120A1333C00116859 /* Menu_Bar_TutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Bar_TutUITests.swift; sourceTree = "<group>"; };
 		4281424320A1333C00116859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4281425220A178FB00116859 /* Folder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Folder; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		4281422120A1333A00116859 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4281422020A1333A00116859 /* Menu Bar Tut.app */,
-				4281423220A1333C00116859 /* Menu Bar TutTests.xctest */,
-				4281423D20A1333C00116859 /* Menu Bar TutUITests.xctest */,
+				4281422020A1333A00116859 /* Project Pipeline Mac ed.app */,
+				4281423220A1333C00116859 /* Project Pipeline Mac edTests.xctest */,
+				4281423D20A1333C00116859 /* Project Pipeline Mac edUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4281421F20A1333A00116859 /* Menu Bar Tut */ = {
+		4281421F20A1333A00116859 /* Project Pipeline Mac ed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4281424620A1333C00116859 /* Build configuration list for PBXNativeTarget "Menu Bar Tut" */;
+			buildConfigurationList = 4281424620A1333C00116859 /* Build configuration list for PBXNativeTarget "Project Pipeline Mac ed" */;
 			buildPhases = (
 				4281421C20A1333A00116859 /* Sources */,
 				4281421D20A1333A00116859 /* Frameworks */,
@@ -155,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = "Menu Bar Tut";
+			name = "Project Pipeline Mac ed";
 			productName = "Menu Bar Tut";
-			productReference = 4281422020A1333A00116859 /* Menu Bar Tut.app */;
+			productReference = 4281422020A1333A00116859 /* Project Pipeline Mac ed.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4281423120A1333C00116859 /* Menu Bar TutTests */ = {
+		4281423120A1333C00116859 /* Project Pipeline Mac edTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4281424920A1333C00116859 /* Build configuration list for PBXNativeTarget "Menu Bar TutTests" */;
+			buildConfigurationList = 4281424920A1333C00116859 /* Build configuration list for PBXNativeTarget "Project Pipeline Mac edTests" */;
 			buildPhases = (
 				4281422E20A1333C00116859 /* Sources */,
 				4281422F20A1333C00116859 /* Frameworks */,
@@ -173,14 +173,14 @@
 			dependencies = (
 				4281423420A1333C00116859 /* PBXTargetDependency */,
 			);
-			name = "Menu Bar TutTests";
+			name = "Project Pipeline Mac edTests";
 			productName = "Menu Bar TutTests";
-			productReference = 4281423220A1333C00116859 /* Menu Bar TutTests.xctest */;
+			productReference = 4281423220A1333C00116859 /* Project Pipeline Mac edTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4281423C20A1333C00116859 /* Menu Bar TutUITests */ = {
+		4281423C20A1333C00116859 /* Project Pipeline Mac edUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4281424C20A1333C00116859 /* Build configuration list for PBXNativeTarget "Menu Bar TutUITests" */;
+			buildConfigurationList = 4281424C20A1333C00116859 /* Build configuration list for PBXNativeTarget "Project Pipeline Mac edUITests" */;
 			buildPhases = (
 				4281423920A1333C00116859 /* Sources */,
 				4281423A20A1333C00116859 /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				4281423F20A1333C00116859 /* PBXTargetDependency */,
 			);
-			name = "Menu Bar TutUITests";
+			name = "Project Pipeline Mac edUITests";
 			productName = "Menu Bar TutUITests";
-			productReference = 4281423D20A1333C00116859 /* Menu Bar TutUITests.xctest */;
+			productReference = 4281423D20A1333C00116859 /* Project Pipeline Mac edUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4281421B20A1333A00116859 /* Build configuration list for PBXProject "Menu Bar Tut" */;
+			buildConfigurationList = 4281421B20A1333A00116859 /* Build configuration list for PBXProject "Project Pipeline Mac ed" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4281421F20A1333A00116859 /* Menu Bar Tut */,
-				4281423120A1333C00116859 /* Menu Bar TutTests */,
-				4281423C20A1333C00116859 /* Menu Bar TutUITests */,
+				4281421F20A1333A00116859 /* Project Pipeline Mac ed */,
+				4281423120A1333C00116859 /* Project Pipeline Mac edTests */,
+				4281423C20A1333C00116859 /* Project Pipeline Mac edUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,12 +297,12 @@
 /* Begin PBXTargetDependency section */
 		4281423420A1333C00116859 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4281421F20A1333A00116859 /* Menu Bar Tut */;
+			target = 4281421F20A1333A00116859 /* Project Pipeline Mac ed */;
 			targetProxy = 4281423320A1333C00116859 /* PBXContainerItemProxy */;
 		};
 		4281423F20A1333C00116859 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4281421F20A1333A00116859 /* Menu Bar Tut */;
+			target = 4281421F20A1333A00116859 /* Project Pipeline Mac ed */;
 			targetProxy = 4281423E20A1333C00116859 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -443,7 +443,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "VLTMedia.Menu-Bar-Tut";
+				PRODUCT_BUNDLE_IDENTIFIER = "VLTMedia.Project-Pipeline-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -460,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "VLTMedia.Menu-Bar-Tut";
+				PRODUCT_BUNDLE_IDENTIFIER = "VLTMedia.Project-Pipeline-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -482,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "VLTMedia.Menu-Bar-TutTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menu Bar Tut.app/Contents/MacOS/Menu Bar Tut";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project Pipeline Mac ed.app/Contents/MacOS/Project Pipeline Mac ed";
 			};
 			name = Debug;
 		};
@@ -502,7 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "VLTMedia.Menu-Bar-TutTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menu Bar Tut.app/Contents/MacOS/Menu Bar Tut";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project Pipeline Mac ed.app/Contents/MacOS/Project Pipeline Mac ed";
 			};
 			name = Release;
 		};
@@ -547,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4281421B20A1333A00116859 /* Build configuration list for PBXProject "Menu Bar Tut" */ = {
+		4281421B20A1333A00116859 /* Build configuration list for PBXProject "Project Pipeline Mac ed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4281424420A1333C00116859 /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4281424620A1333C00116859 /* Build configuration list for PBXNativeTarget "Menu Bar Tut" */ = {
+		4281424620A1333C00116859 /* Build configuration list for PBXNativeTarget "Project Pipeline Mac ed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4281424720A1333C00116859 /* Debug */,
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4281424920A1333C00116859 /* Build configuration list for PBXNativeTarget "Menu Bar TutTests" */ = {
+		4281424920A1333C00116859 /* Build configuration list for PBXNativeTarget "Project Pipeline Mac edTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4281424A20A1333C00116859 /* Debug */,
@@ -574,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4281424C20A1333C00116859 /* Build configuration list for PBXNativeTarget "Menu Bar TutUITests" */ = {
+		4281424C20A1333C00116859 /* Build configuration list for PBXNativeTarget "Project Pipeline Mac edUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4281424D20A1333C00116859 /* Debug */,
