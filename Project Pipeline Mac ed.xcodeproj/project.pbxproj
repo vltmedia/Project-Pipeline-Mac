@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		423C890320A2B2C400A428A1 /* Folder in Resources */ = {isa = PBXBuildFile; fileRef = 423C88FF20A2B2C400A428A1 /* Folder */; };
-		423C890420A2B2C400A428A1 /* Folder in Resources */ = {isa = PBXBuildFile; fileRef = 423C88FF20A2B2C400A428A1 /* Folder */; };
-		423C890520A2B2C400A428A1 /* Folder in Resources */ = {isa = PBXBuildFile; fileRef = 423C88FF20A2B2C400A428A1 /* Folder */; };
 		4270565F20A3D310004E376E /* Folders.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4270565E20A3D310004E376E /* Folders.rtf */; };
 		4270566020A3D310004E376E /* Folders.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4270565E20A3D310004E376E /* Folders.rtf */; };
 		4270566120A3D310004E376E /* Folders.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4270565E20A3D310004E376E /* Folders.rtf */; };
+		4270566520A3DC41004E376E /* Folder in Resources */ = {isa = PBXBuildFile; fileRef = 4270566420A3DC41004E376E /* Folder */; };
 		4281422420A1333B00116859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4281422320A1333B00116859 /* AppDelegate.swift */; };
 		4281422620A1333B00116859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4281422520A1333B00116859 /* ViewController.swift */; };
 		4281422820A1333C00116859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4281422720A1333C00116859 /* Assets.xcassets */; };
@@ -51,8 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		423C88FF20A2B2C400A428A1 /* Folder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Folder; path = "Menu Bar Tut/Files/Folder"; sourceTree = SOURCE_ROOT; };
 		4270565E20A3D310004E376E /* Folders.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Folders.rtf; path = "../../../../../../Library/Application Support/VLT/Folders.rtf"; sourceTree = "<group>"; };
+		4270566420A3DC41004E376E /* Folder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Folder; path = "Project Pipeline/Files/Folder"; sourceTree = "<group>"; };
 		4281422020A1333A00116859 /* Project Pipeline Mac ed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Pipeline Mac ed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4281422320A1333B00116859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4281422520A1333B00116859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,15 +96,15 @@
 			children = (
 			);
 			name = Files;
-			path = "../../../../../../../../Documents/Projects/Apps/Menu Bar Tut/Menu Bar Tut/Files";
+			path = "../../../../../../../../Documents/Projects/Apps/Menu Bar Tut/Project Pipeline/Files";
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		4281421720A1333A00116859 = {
 			isa = PBXGroup;
 			children = (
+				4270566420A3DC41004E376E /* Folder */,
 				4270565E20A3D310004E376E /* Folders.rtf */,
-				423C88FF20A2B2C400A428A1 /* Folder */,
-				4281422220A1333A00116859 /* Menu Bar Tut */,
+				4281422220A1333A00116859 /* Project Pipeline */,
 				4281423520A1333C00116859 /* Project PipelineTests */,
 				4281424020A1333C00116859 /* Project PipelineUITests */,
 				4281422120A1333A00116859 /* Products */,
@@ -123,7 +121,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4281422220A1333A00116859 /* Menu Bar Tut */ = {
+		4281422220A1333A00116859 /* Project Pipeline */ = {
 			isa = PBXGroup;
 			children = (
 				423C88FD20A2B27F00A428A1 /* Files */,
@@ -134,7 +132,7 @@
 				4281422C20A1333C00116859 /* Info.plist */,
 				4281422D20A1333C00116859 /* Menu_Bar_Tut.entitlements */,
 			);
-			path = "Menu Bar Tut";
+			path = "Project Pipeline";
 			sourceTree = "<group>";
 		};
 		4281423520A1333C00116859 /* Project PipelineTests */ = {
@@ -262,7 +260,7 @@
 			files = (
 				4270565F20A3D310004E376E /* Folders.rtf in Resources */,
 				4281422820A1333C00116859 /* Assets.xcassets in Resources */,
-				423C890320A2B2C400A428A1 /* Folder in Resources */,
+				4270566520A3DC41004E376E /* Folder in Resources */,
 				4281422B20A1333C00116859 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4270566020A3D310004E376E /* Folders.rtf in Resources */,
-				423C890420A2B2C400A428A1 /* Folder in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +278,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4270566120A3D310004E376E /* Folders.rtf in Resources */,
-				423C890520A2B2C400A428A1 /* Folder in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Menu Bar Tut/Info.plist";
+				INFOPLIST_FILE = "Project Pipeline/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -476,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Menu Bar Tut/Info.plist";
+				INFOPLIST_FILE = "Project Pipeline/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
