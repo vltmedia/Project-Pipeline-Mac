@@ -169,6 +169,9 @@ class ViewController: NSViewController {
             print("Error in getting path URL");
         }
         
+        // **** DO THE FILE COPY HEREEEEEEEEEEE
+        
+        
         print("Project folder is:", MyVariables.Projfolder)
         
     }
