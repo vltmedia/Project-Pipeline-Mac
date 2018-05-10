@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Menu Bar Tut
+//  PROJECT PIPELINE
 //
 //  Created by Justin Jaro on 5/7/18.
 //  Copyright © 2018 Justin Jaro. All rights reserved.
@@ -20,20 +20,87 @@ class ViewController: NSViewController {
     var Projroot : String = ""
     //var Projroot : String
     
+    
+    
+    // VARIABLES THAT WE KEEP
     struct MyVariables {
-        static var Projroot = "Desk"
+        
+        static var Projroot = "/Library/Application Support/VLT"
         static var completeUrl = URL(fileURLWithPath: MyVariables.Projroot)
-        static var Projfolder = "Desk"
+        static var Projname = "Name"
+        static var Projfolder = "/Library/Application Support/VLT/Folders.rtf"
+        static var Pathall = Projroot + "/" + Projname
+        static var Folderbat = "/Users/justinjaro/Documents/VLT/Screen.png"
+        static var libpaths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .localDomainMask, true)
+        static var appSupportDir = libpaths[0] + "/VLT/Folder"
+        
         
     }
     
     @IBOutlet weak var lblprint: NSTextField!
+    @IBOutlet weak var txtbigbox: NSTextField!
     @IBAction func btnPrint(_ sender: Any) {
+        
+        /// THIS IS MY TESTING BUTTON*****
+        
+        
+        //let fullpath = MyVariables.Projroot + MyVariables.Projfolder
+        
+       
          MyVariables.completeUrl = URL(fileURLWithPath: MyVariables.Projroot)
-        print(MyVariables.completeUrl)
         
-        //lblprint.stringValue = completeUrl
+        // SET FILE TO MOVE TO URL
+        let FileMove = URL(fileURLWithPath:MyVariables.appSupportDir)
         
+        
+       // SET PROJECT FOLDER DIR TO MOVE TO URL
+        let Copypath = URL(fileURLWithPath:MyVariables.Projfolder)
+        
+        
+         // SET REMOVE FILE IF THERE
+        let removefile = MyVariables.Projfolder + "/Folders"
+        
+    
+        
+        let fileManager = FileManager.default
+      
+        //******* TRIED THIS DIDN'T WORK**********
+        //   let Datafile = fileManager.contents(atPath: storeURL)
+      //  fileManager.createFile(atPath: Copypath, contents: Datafile,
+        //                           attributes: nil)
+        
+        
+        // I need to copy the file Folder into the Projfolder and launch it
+        
+        
+        
+         // DELETE FILE
+        do
+        {
+            try fileManager.removeItem(atPath: removefile)
+            
+        }
+        catch let error as NSError {
+            print("Remove:\n \(error)")
+        }
+        
+        
+        // MOVE ITEM......I GET FILE EXISTS EVEN THOUGH IT WAS TAKEN OUT UP TOP
+        do {
+             let fileManager = FileManager.default
+            try fileManager.moveItem(at: FileMove, to: Copypath)
+    }catch let error as NSError {
+    print("Move:\n \(error)")
+        }
+        
+        
+        // Get contents in directory: '.' (current one)
+     
+        
+        
+        // Launches batch file in APP Support
+        //NSWorkspace.shared.openFile(MyVariables.appSupportDir)
+
     }
     @IBAction func btnFolder(_ sender: Any) {
         
@@ -59,7 +126,8 @@ class ViewController: NSViewController {
         
         NSWorkspace.shared.openFile(projfolder)
         
-        
+        print("Opened folder:",projfolder)
+       
     }
     @IBOutlet weak var txtProjname: NSTextField!
     override func awakeFromNib() {
@@ -73,48 +141,24 @@ class ViewController: NSViewController {
     
     
     @IBAction func btnSetProj(_ sender: Any) {
+    
         
-        // lblName.stringValue = txtProjname.stringValue
-        let Projname = txtProjname.stringValue
-       // let fileUrl = NSURL(string: filePath)
-        let Filearea = Projroot + Projname
+        MyVariables.completeUrl = URL(fileURLWithPath: MyVariables.Projroot)
         
-          MyVariables.completeUrl = URL(fileURLWithPath: MyVariables.Projroot)
-        
-        let url1 =  MyVariables.completeUrl.absoluteURL
-        print(url1)
+    
         
         let rootarea = MyVariables.Projroot
         
-        let url =  url1.absoluteString
-print(url)
         
         let projname = txtProjname.stringValue
         
         MyVariables.Projfolder = rootarea + "/" + projname
         
-       let folder: URL? = Foundation.URL(string: Filearea)
-       
-        let Filess  = URL(string: "Filearea")                 //returns a valid URL
-       // let invalidURL = URL(string: "www.example.com/This is a sentence")    //Returns nil
-        let url2 = MyVariables.Projroot + "/" + Projname
-      // let ProjLoc  = URL(string: url)                 //returns a valid URL
         
-        
-       // let fileManager = FileManager.default
-       // let folderbat = "/Users/justinjaro/Desktop/Purple.png"
-        
-        //do{
-        //    try fileManager.copyItem(atPath: "/Users/justinjaro/Desktop/Purple.png", toPath: Projroot)
-        //}catch let error as NSError {
-        //    print("error occurred, here are the details:\n \(error)")
-        //}
-        
-         //fileManager.createDirectory(atPath: Projname, withIntermediateDirectories: true, attributes: nil)
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         if let pathURL = URL.init(string: rootarea) {
             let dataURL = pathURL.appendingPathComponent(txtProjname.stringValue)
-            print(pathURL);
+          //  print(pathURL);
             do {
                 try FileManager.default.createDirectory(atPath: dataURL.absoluteString, withIntermediateDirectories: true, attributes: nil)
             } catch let error as NSError {
@@ -124,18 +168,23 @@ print(url)
         else {
             print("Error in getting path URL");
         }
-            }
-        //    NSLog("Document directory is \(filePath)")
-      //  }
+        
+        print("Project folder is:", MyVariables.Projfolder)
+        
+    }
+    //    NSLog("Document directory is \(filePath)")
+    //  }
+
+    
         
         
-    //}
     
     
     
     
     @IBAction func btnOpen(_ sender: Any) {
         
+        //Chose Root Project Folder
         
         let openPanel = NSOpenPanel();
         openPanel.title = "Select a folder to watch for videos"
@@ -150,30 +199,14 @@ print(url)
         openPanel.begin { (result) -> Void in
             if(result.rawValue == NSApplication.ModalResponse.OK.rawValue){
                 let path = openPanel.url!.path
-                print("selected folder is \(path)");
+                //print("selected folder is \(path)");
                 
-                //let Projroot = path
-                
-                //self.lblName.stringValue = path
-                
-                // WE SET THE FULL PROJ PATH HERE
-                
-                //let Projroot = (path + "/" + self.lblName.stringValue)
-                
-                let Projroot = path
+                // Sets Projec Root folder up top in the global
                 MyVariables.Projroot = path
-               // self.lblprint.stringValue = "file://" + path
-
-             print(Projroot);
+             print(MyVariables.Projroot);
                 
                 
                 
-                
-               //  FileManager.default.createDirectory(atPath: Newproj, withIntermediateDirectories: true, attributes: nil)
-                
-                
-                // self.watchFolderLabel.stringValue = path; //  no need when binding
-             //   self.savePref("watchFolder", value: path);
             }
             
             
@@ -184,17 +217,9 @@ print(url)
     
     @IBAction func Copy(_ sender: Any) {
         
+        //DON'T WORRY ************
         
-        let fileManager = FileManager.default
         
-        // Copy 'hello.swift' to 'subfolder/hello.swift'
-        
-        do {
-            try fileManager.copyItem(atPath: "Folder", toPath: "subfolder/hello.swift")
-        }
-        catch let error as NSError {
-            print("Ooops! Something went wrong: \(error)")
-        }
         
         
         
@@ -240,6 +265,9 @@ print(url)
     @IBOutlet weak var theLabel: NSTextField!
     @IBOutlet weak var theButton: NSButton!
     @IBAction func theButton(_ sender: NSButton) {
+        //DON'T WORRY ************
+        
+        
         buttonPresses += 1
         setLabelMessage()
     }

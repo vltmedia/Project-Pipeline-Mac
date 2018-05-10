@@ -1,0 +1,8 @@
+cd "${BASH_SOURCE%/*}" || exit   
+mkdir AFX
+mkdir AFX_OUT
+mkdir Export
+mkdir C4D
+mkdir Assets
+cd Assets
+mkdir 3D
